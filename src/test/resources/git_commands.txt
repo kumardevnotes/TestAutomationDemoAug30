@@ -1,0 +1,24 @@
+How to pull/clone/checkout/download latest code from github to your local?
+
+Right click on project --> Show In --> Terminal
+
+
+git status
+git reset --hard
+git fetch
+git pull
+
+right click n the project and then refresh 
+
+then you should e the latest changes coming into your eclipse
+
+How to push/check-in from local to github ?
+
+Right click on project --> Show In --> Terminal
+
+git branch --> to check your current branch
+
+git status
+git add --all
+git commit -m "Added selenium script  for login page"
+git push
