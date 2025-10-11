@@ -1,0 +1,20 @@
+Static Exceptions (Checked Exceptions)
+
+1. IOException → occurs during input/output operations.
+
+2. SQLException → occurs during database access errors.
+
+3. FileNotFoundException → when a file is missing.
+
+4. ClassNotFoundException → when a class is not found at runtime but referenced in code.
+
+
+Dynamic Exceptions (Unchecked Exceptions)
+
+1. NullPointerException → accessing an object with a null reference.
+
+2. ArrayIndexOutOfBoundsException → invalid array index access.
+
+3. ArithmeticException → divide by zero or similar arithmetic issues.
+
+4. NumberFormatException → invalid conversion from string to number.
