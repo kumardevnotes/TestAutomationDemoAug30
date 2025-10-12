@@ -4,3 +4,13 @@ Practice programs on Control structures, Java methods and java constructor
 1. Write a java program to print prime numbers up to 30 (2, 3, 5,7, 9,11,13, 17,19,23,29)
 2. Print characters of a string in reverse (String empName = "John";OP: nhoJ)
 3. Write java programs for methods with and without return type 4.Write Java program to demonstrate constructor in Java
+
+
+Write a Java program to check whether your folder has files or not..
+if you have files, print the filenames on the console 
+
+
+Access Specifiers in Java
+final keyword in Java
+interface and Abstract keyword in Java
+Inheritance in Java
