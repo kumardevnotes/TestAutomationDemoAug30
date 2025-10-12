@@ -10,7 +10,14 @@ Write a Java program to check whether your folder has files or not..
 if you have files, print the filenames on the console 
 
 
+Inheritance in Java
+
 Access Specifiers in Java
 final keyword in Java
 interface and Abstract keyword in Java
-Inheritance in Java
+
+where elese I can use final keyword in Java ?
+
+1. declare var as final.. then you cant assign new value to it
+2. declare a method as final.. then Child class cant override that method
+3. declare a class as final.. then no class can inherit that Parent class
