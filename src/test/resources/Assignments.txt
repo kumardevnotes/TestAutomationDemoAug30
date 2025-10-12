@@ -14,9 +14,10 @@ Inheritance in Java
 
 Access Specifiers in Java
 final keyword in Java
-interface and Abstract keyword in Java
 
-where elese I can use final keyword in Java ?
+interface and Abstract keyword in Java.. Private and protected keywords
+
+where else I can use final keyword in Java ?
 
 1. declare var as final.. then you cant assign new value to it
 2. declare a method as final.. then Child class cant override that method
