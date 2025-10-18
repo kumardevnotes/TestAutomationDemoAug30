@@ -43,6 +43,7 @@ public class ListDemo {
 		employeeData.addAll(additionalEmployeeData);
 		System.out.println(employeeData);
 		
+		//get the object/value at given position
 		System.out.println(employeeData.get(1));
 		
 		System.out.println("After Adding: " +employeeData.containsAll(additionalEmployeeData));
@@ -58,6 +59,21 @@ public class ListDemo {
 		for(Object object : employeeData) {
 			System.out.print(object+" ");
 		}
+		
+		System.out.println();
+		
+		System.out.println("check size below");
+		
+		System.out.println(employeeData.size());
+		
+		System.out.println("check whether your list obj is empty");
+		System.out.println(employeeData.isEmpty());
+		
+		System.out.println("trying to clear list object");
+		//clear() clears all the values and makes the list empty
+		employeeData.clear();
+		System.out.println(employeeData);
+		System.out.println("---------");
 	}
 
 }
