@@ -15,7 +15,7 @@ Inheritance in Java
 Access Specifiers in Java
 final keyword in Java
 
-interface and Abstract keyword in Java.. Private and protected keywords
+next week.. interface and Abstract keyword and collections in Java.. Private and protected keywords
 
 where else I can use final keyword in Java ?
 
