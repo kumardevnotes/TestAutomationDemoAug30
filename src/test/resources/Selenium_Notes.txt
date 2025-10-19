@@ -1,0 +1,52 @@
+
+
+
+Locators in Selenium ?
+
+ID
+Name
+ClassName
+TagName
+LinkText
+PartialLinkText
+CSS
+XPath
+
+Methods in Selenium ?
+get()
+refresh()
+navigateTo()
+forward()
+backward()
+sendKeys()
+clear()
+getCurrentUrl()
+getTitle()
+getPageSource()
+getAttaribute()
+getText()
+getCssValue(String property)
+isDisplayed()
+isEnabled()
+isSelected()
+findElement()
+findElements()
+getWindowHandle()
+getWindowHandles()
+newWindow(Tab/Window)
+switchTo().alert()
+Actions for Mouse Hovering
+Close()
+Quit()
+GetScreenshotAs()
+Explicit Wait and Implicit Wait
+JavaScriptExecutor examples
+
+
+
+TestNG ?
+
+API ?
+
+Interview Prep Tips ?
+

@@ -21,16 +21,28 @@ public class SeleniumDemo {
 		 * 8. Close the browser
 		 * */
 		
+		// To download Driver file and to setup its path to launch actual chrome browser
 		WebDriverManager.chromedriver().setup();
 		
+		//Launch the browser
 		WebDriver driver = new ChromeDriver(); // ChromeDriver implements WebDriver in the background
 		
+		//Maximize the browser
 		driver.manage().window().maximize();
-		//driver.get("https://www.speaklanguages.com/");
+		
+		//Launch the application
 		driver.get("https://www.speaklanguages.com/");
-		Thread.sleep(2000); // 2000 ms == 2 seonds
+		
+		//Wait for 2 seconds
+		Thread.sleep(2000); // 2000ms == 2seonds
+		
+		//Click on Login link
 		driver.findElement(By.linkText("Log in")).click();
+		
+		//Again wait for 3seconds
 		Thread.sleep(3000);
+		
+		//Close the bowser
 		driver.quit();
 
 	}
