@@ -9,6 +9,28 @@ PartialLinkText..
 CSS - NA
 XPath
 
+
+What is XPAth in Selenium?
+XPath locates your target element on the screen uniquely so that you can perform your
+regular selenium actions such as click() senKeys() and etc
+
+Absolute XPath:/html/body/div[1]/h1 --> Absoloute xpath starts from parent element HTML and very slow and lengthy. Not recommended
+
+Relative Xpath: starts with // and Very faster compared to Absolute and easy to write and use
+
+//h1[.='Sign up to Speak Languages'] - to locate your element based on exact text match
+//a[.='Privacy policy'] - to locate your element based on exact text match
+//*[contains(text(),'language')] - Contains partial text given in complete webpage
+//p[contains(text(),'language')] - Contains partial text inside a p tag inside webpage
+(//p[contains(text(),'language')])[1] - if you want to locate index based element ...
+//a - It gives all the matching elements of the given tag  a in complete webPage
+//* - It gives all the available tags in complete webpage
+//input[@id='first_name'] - Attribute and Value based xpath
+//input[@name='first_name']- Attribute and Value based xpath
+//a[.='Privacy policy']/following-sibling::a[2] - Sibling based Xpath
+//a[.='Terms of use']/preceding-sibling::a - Sibling based Xpath
+//h1[.='Phrase guides']/..//p --> Child to parent -->Child based Xpath
+
 Methods in Selenium ?
 get()
 refresh()
