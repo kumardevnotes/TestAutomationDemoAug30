@@ -1,15 +1,12 @@
-
-
-
 Locators in Selenium ?
 
-ID
-Name
-ClassName
-TagName
-LinkText
-PartialLinkText
-CSS
+ID ...
+Name...
+ClassName...
+TagName...
+LinkText..
+PartialLinkText..
+CSS - NA
 XPath
 
 Methods in Selenium ?
