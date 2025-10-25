@@ -32,31 +32,36 @@ Relative Xpath: starts with // and Very faster compared to Absolute and easy to 
 //h1[.='Phrase guides']/..//p --> Child to parent -->Child based Xpath
 
 Methods in Selenium ?
-get()
-refresh()
-navigateTo()
-forward()
-backward()
-sendKeys()
-clear()
-getCurrentUrl()
-getTitle()
-getPageSource()
-getAttaribute()
-getText()
-getCssValue(String property)
+
+get() - To Launch the application
+refresh() - To refresh the page
+navigateTo().forward() - to forward the web page
+navigateTo().backward()- to backward the web page
+sendKeys() - to enter text into the text field
+clear() - to clear the text which is inside text field
+click() - to click on button/link
+
+getCurrentUrl() - To get current page URl
+getTitle() - To get current page title
+getPageSource() - to get current page HTML source
+getAttaribute() - To get attribute value of given WebElement/Locator
+getText() - to get visible text on the screen of the given locator
+getCssValue(String property) -  It gives the given CSS value like BG color of button or link on the web Page
+
 isDisplayed()
 isEnabled()
 isSelected()
-findElement()
-findElements()
+
+findElement() - to find WebElement on the screen using given locator. It returns only one WebElement
+findElements() - to find WebElements on the screen using given locator. It returns 1 or more than one WebElement. List<WebElement>
+
 getWindowHandle()
 getWindowHandles()
 newWindow(Tab/Window)
 switchTo().alert()
 Actions for Mouse Hovering
-Close()
-Quit()
+Close() - To close current browser window
+Quit() - To close all the opened browser windows
 GetScreenshotAs()
 Explicit Wait and Implicit Wait
 JavaScriptExecutor examples
