@@ -14,7 +14,7 @@ What is XPAth in Selenium?
 XPath locates your target element on the screen uniquely so that you can perform your
 regular selenium actions such as click() senKeys() and etc
 
-Absolute XPath:/html/body/div[1]/h1 --> Absoloute xpath starts from parent element HTML and very slow and lengthy. Not recommended
+Absolute XPath:/html/body/div[1]/h1 --> Absoloute xpath starts from parent element HTML and very slow and lengthy. Not recommended. It starts with Single slash
 
 Relative Xpath: starts with // and Very faster compared to Absolute and easy to write and use
 
