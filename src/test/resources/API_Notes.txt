@@ -1,0 +1,20 @@
+
+API Status Codes:
+
+Client-Side (4xx)
+Code		Meaning
+400			Bad Request – The server could not understand the request due to invalid syntax.
+401			Unauthorized – Authentication is required and has failed or not been provided.
+403			Forbidden – The server understood the request but refuses to authorize it.
+404			Not Found – The requested resource could not be found on the server.
+408			Request Timeout – The server timed out waiting for the request.
+
+
+Server-Side (5xx)
+
+Code		Meaning
+500			Internal Server Error – The server encountered an unexpected condition.
+501			Not Implemented – The server does not support the functionality required.
+502			Bad Gateway – The server received an invalid response from the upstream server.
+503			Service Unavailable – The server is not ready to handle the request (overloaded or down).
+504			Gateway Timeout – The server acted as a gateway and did not get a timely response.

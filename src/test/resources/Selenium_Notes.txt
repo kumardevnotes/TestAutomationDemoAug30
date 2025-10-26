@@ -55,19 +55,25 @@ isSelected() - to check whether the element is selected on the screen or not. If
 findElement() - to find WebElement on the screen using given locator. It returns only one WebElement
 findElements() - to find WebElements on the screen using given locator. It returns 1 or more than one WebElement. List<WebElement>
 
-getWindowHandle()
-getWindowHandles()
+newWindow(Tab/Window)- To open a new window or Tab in already opened browser
 
-newWindow(Tab/Window)- To open a new window or Tab in already opened browserL̥
 
-switchTo().alert()
+getWindowHandle() -- gives current window ID
+getWindowHandles() -- gives all opened window Ids into a Set collection object
+switchTo().window(windoID) --> To switch to a particular window based on ID
 
-Actions for Mouse Hovering
+switchTo().alert() --> Used to switch to the Alert which is opened in the browser
+
+Actions for Mouse Hovering - Used to hover your mouse on the given element
+
 Close() - To close current browser window
 Quit() - To close all the opened browser windows
-GetScreenshotAs()
+
+((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE) --> To capture the screenshot of current Page
+
+JavaScriptExecutor examples - To perform Web Page scrolldown or scrollup actions in Selenium
+
 Explicit Wait and Implicit Wait
-JavaScriptExecutor examples
 
 
 TestNG ?
