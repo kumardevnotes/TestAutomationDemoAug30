@@ -18,7 +18,7 @@ public class SeleniumDemo4 {
 	
 		WebDriver driver = new ChromeDriver(); 
 		
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		driver.get("https://www.speaklanguages.com/");
 		Thread.sleep(2000);

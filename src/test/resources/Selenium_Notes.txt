@@ -45,27 +45,29 @@ getCurrentUrl() - To get current page URl
 getTitle() - To get current page title
 getPageSource() - to get current page HTML source
 getAttaribute() - To get attribute value of given WebElement/Locator
-getText() - to get visible text on the screen of the given locator
-getCssValue(String property) -  It gives the given CSS value like BG color of button or link on the web Page
+getText() - to get visible text on the screen of the given locator/element/object/control
+getCssValue(String property) -  It gives the given CSS property value like BG color of button or link on the web Page
 
-isDisplayed()
-isEnabled()
-isSelected()
+isDisplayed() - to check whether the element displayed on the screen or not. If displayed it returns true..else returns false
+isEnabled()- to check whether the element enabled on the screen or not. If enabled it returns true..else returns false
+isSelected() - to check whether the element is selected on the screen or not. If selected it returns true..else returns false
 
 findElement() - to find WebElement on the screen using given locator. It returns only one WebElement
 findElements() - to find WebElements on the screen using given locator. It returns 1 or more than one WebElement. List<WebElement>
 
 getWindowHandle()
 getWindowHandles()
-newWindow(Tab/Window)
+
+newWindow(Tab/Window)- To open a new window or Tab in already opened browserL̥
+
 switchTo().alert()
+
 Actions for Mouse Hovering
 Close() - To close current browser window
 Quit() - To close all the opened browser windows
 GetScreenshotAs()
 Explicit Wait and Implicit Wait
 JavaScriptExecutor examples
-
 
 
 TestNG ?

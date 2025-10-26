@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Demo</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 250px;
+      font-size: 14px;
+    }
+
+    .option-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .green-btn {
+      background-color: #28a745;
+    }
+
+    .red-btn {
+      background-color: #dc3545;
+    }
+
+    .btn:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to HTML Demo Page</h1>
+
+  <div class="form-container">
+    <input type="text" placeholder="First Name" id="firstName">
+    <input type="text" placeholder="Last Name" id="lastName">
+  </div>
+
+  <div class="option-group">
+    <h3>Select Gender:</h3>
+    <label><input type="radio" name="gender" value="male" checked> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+  </div>
+
+  <div class="option-group">
+    <h3>Select Interests:</h3>
+    <label><input type="checkbox" name="interest" value="sports" checked> Sports</label>
+    <label><input type="checkbox" name="interest" value="music"> Music</label>
+  </div>
+
+  <div class="button-container">
+    <button class="btn green-btn" id="primaryBtn">Primary</button>
+    <button class="btn red-btn" id="secondaryBtn" disabled>Secondary</button>
+  </div>
+</body>
+</html>
