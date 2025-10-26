@@ -49,4 +49,8 @@ public class JavaMethodsDemo1 {
 		String fullName = firstName + "-" + lastName;
 		return fullName;
 	}
+	
+	public void testMethod() {
+		System.out.println("Test Method");
+	}
 }
