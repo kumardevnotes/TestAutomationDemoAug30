@@ -76,9 +76,17 @@ JavaScriptExecutor examples - To perform Web Page scrolldown or scrollup actions
 Explicit Wait and Implicit Wait
 
 
-TestNG ?
+TestNG ? - Test Next Generation . And it is a Testing framework
+
+disadvantages we have with Java main() ?
+
+1. You can run only one java program at any given point of time..
+2. you don't get reports to send to your manager
+3. Parallel execution is not available
 
 API ?
+
+Pending Manual testing concepts such as whitebox testing, BVA EVP in testing ?
 
 Interview Prep Tips ?
 
