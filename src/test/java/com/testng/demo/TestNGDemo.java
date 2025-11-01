@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNGDemo {
 	@Test
+	// #TC ID --> JIRA-1122
 	public void loginPageDemo() throws Exception {
 		WebDriverManager.chromedriver().setup();
 
