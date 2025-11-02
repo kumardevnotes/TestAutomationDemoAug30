@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import com.github.javafaker.Faker;
+
 public class SignupPage {
 
 	WebDriver driver = null;
@@ -13,9 +15,18 @@ public class SignupPage {
 	}
 
 	public void appSignup() throws Exception {
-		driver.findElement(By.id("first_name")).sendKeys("John");
-		driver.findElement(By.name("last_name")).sendKeys("Legend");
-		driver.findElement(By.name("email")).sendKeys("johnlegetestrt41434@gmail.com");
+		 
+		Faker faker = new Faker();
+
+		    // Generate fake user data
+		    String firstName = faker.name().firstName();
+		    String lastName = faker.name().lastName();
+		    String email = faker.internet().emailAddress();
+
+		    driver.findElement(By.id("first_name")).sendKeys(firstName);
+		    driver.findElement(By.name("last_name")).sendKeys(lastName);
+		    driver.findElement(By.name("email")).sendKeys(email);
+		    
 		driver.findElement(By.name("password")).sendKeys("Test#223344");
 		
 		Select genderSelect = new Select(driver.findElement(By.name("sex")));

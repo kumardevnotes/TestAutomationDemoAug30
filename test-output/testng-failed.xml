@@ -5,8 +5,8 @@
     <classes>
       <class name="com.app.tests.AppTests">
         <methods>
-          <include name="verifyInvalidLogin"/>
           <include name="beforeMethod"/>
+          <include name="verifySuccessfulLogin"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.app.tests.AppTests -->

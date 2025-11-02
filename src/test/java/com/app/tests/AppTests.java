@@ -9,6 +9,9 @@ import com.app.pages.SignupPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeMethod;
+import java.io.FileReader;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -18,13 +21,26 @@ public class AppTests {
 	HomePage homePage = null;
 	LoginPage loginPage = null;
 	SignupPage signupPage = null;
+	
+	String appUrl  = "";
+	String appUserEmail = "";
+	String appPwd = "";
 
 	@BeforeMethod
-	public void beforeMethod() {
+	public void beforeMethod() throws Exception {
+		
+		FileReader file = new FileReader("./src//test//resources//AppData.properties");
+		Properties props =  new Properties();
+		props.load(file);
+		appUrl = props.get("AppURL").toString();
+		System.out.println(":: " + appUrl);
+		appUserEmail = props.get("AppUserEmail").toString();
+		appPwd = props.get("AppPassword").toString();
+		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.speaklanguages.com/");
+		driver.get(appUrl);
 
 		homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
@@ -34,11 +50,11 @@ public class AppTests {
 	@Test(priority = 1)
 	public void verifySuccessfulLogin() throws Exception {
 		homePage.launchLoginPage();
-		loginPage.appLogin("johnnitesh2@gmail.com", "Testing@123");
+		loginPage.appLogin(appUserEmail, appPwd);
 		loginPage.verifyLoginSuccess();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, invocationCount = 3)
 	public void verifySignup() throws Exception {
 		homePage.launchSignUpPage();
 		signupPage.appSignup();

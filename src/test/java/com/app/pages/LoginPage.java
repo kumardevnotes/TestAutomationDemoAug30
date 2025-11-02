@@ -2,6 +2,7 @@ package com.app.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class LoginPage {
 
@@ -21,8 +22,9 @@ public class LoginPage {
 	public void verifyLoginSuccess() {
 		if (driver.findElement(By.id("nav_user")).isDisplayed())
 			System.out.println("User login is successful");
-		else
-			System.out.println("Something went wrong. User login is not successful");
+		else {
+			Assert.fail("Something went wrong. User login is not successful");
+		}
 	}
 
 	public void verifyLoginError() {
