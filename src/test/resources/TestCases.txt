@@ -1,0 +1,26 @@
+====================================
+
+TCs for Automation (https://www.speaklanguages.com)
+
+1. Verify successful login
+     1. Launch chrome
+     2. Launch App https://www.speaklanguages.com/
+     3. Click login link
+     4. Enter valid username and password and then click login button
+     5. Then user should be able to login successfully
+     
+2. Verify Signup as new user
+     1. Launch chrome
+     2. Launch App https://www.speaklanguages.com/
+     3. Click Singup link
+     4. Fill the signup form with all the valid data
+     5. Then click signup button
+     6. USer should be able to see "Thank you — now activate your account!" message on the screen
+     
+3. Verify invalid login error
+
+     1. Launch chrome
+     2. Launch App https://www.speaklanguages.com/
+     3.Click login link
+     4. Enter Invalid username and password and then click login button
+     5. Then user should see an error message "The login details you entered are incorrect."
