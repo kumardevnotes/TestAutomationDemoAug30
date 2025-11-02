@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SpeakLanaguagesTestsSuite" verbose="1" parallel="classes" thread-count="5">
+ <parameter name="userEmail"  value="kumarTrainier@gmail.com"/>
+  <test name="Smoke">
+    <classes>
+      <class name="com.testng.demo.TestNGParameterizaionDemo"/>
+    </classes>
+  </test>
+</suite>
