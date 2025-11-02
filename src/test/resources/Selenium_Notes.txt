@@ -52,6 +52,8 @@ isDisplayed() - to check whether the element displayed on the screen or not. If 
 isEnabled()- to check whether the element enabled on the screen or not. If enabled it returns true..else returns false
 isSelected() - to check whether the element is selected on the screen or not. If selected it returns true..else returns false
 
+Select class for dropdown selection on the webpage
+
 findElement() - to find WebElement on the screen using given locator. It returns only one WebElement
 findElements() - to find WebElements on the screen using given locator. It returns 1 or more than one WebElement. List<WebElement>
 
